@@ -6,12 +6,12 @@ using Microsoft.Azure.SignalR.Management;
 
 namespace cyngim.SignalRIssue.Library
 {
-    public class Class1
+    public class IssueCreator
     {
         private readonly ConcurrentDictionary<string, Lazy<Task<ServiceHubContext>>> _serviceHubContexts = new ConcurrentDictionary<string, Lazy<Task<ServiceHubContext>>>();
         private readonly string _connectionString;
 
-        public Class1(string connectionString)
+        public IssueCreator(string connectionString)
         {
             _connectionString = connectionString;
         }
